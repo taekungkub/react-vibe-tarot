@@ -8,13 +8,6 @@ An immersive, animated tarot card reading application built with React, TypeScri
 
 ## 🚀 Getting Started
 
-### Prerequisites
-
-| Requirement | Version |
-|-------------|---------|
-| Node.js | >= 18.x |
-| Bun | Latest |
-
 ### Installation
 
 ```bash
@@ -37,16 +30,7 @@ bun run build
 bun run preview
 ```
 
-### Available Scripts
 
-| Command | Description |
-|---------|-------------|
-| `bun run dev` | Start development server with hot reload |
-| `bun run build` | Build for production |
-| `bun run lint` | Run ESLint for code quality |
-| `bun run preview` | Preview production build locally |
-
-## 🎴 Component Overview
 
 ### Core Components
 
@@ -87,29 +71,6 @@ graph LR
     B -->|Animation Complete| C[Stage 3: Card Reveals]
     C -->|Reset| A
 ```
-
-### Animation Timing
-
-| Animation | Timing | Easing |
-|-----------|--------|--------|
-| Card flight | 1.5s | easeInOut |
-| Card flip | 0.8s | easeInOut |
-| Fade transitions | 0.5s | linear |
-| Hover effects | 0.3s | ease |
-
-## 💻 Development
-
-### Key Features Implementation
-
-#### 1. Card Selection System
-- Click any card in the deck to select it
-- Multiple cards can be selected (configurable)
-- Selected cards are tracked by index
-
-#### 2. Animation Orchestration
-- Uses `useGSAP` hook for timeline management
-- Refs for precise element targeting
-- Framer Motion for smooth transitions
 
 
 ## 📦 Dependencies Overview
